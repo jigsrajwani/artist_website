@@ -224,22 +224,22 @@ export default function HeroSection() {
           </div>
 
           {/* Floating "Live" badge */}
-          <div style={{
+          {/* <div style={{
             position: 'absolute', top: '1rem', right: '0.5rem', zIndex: 2,
             display: 'flex', alignItems: 'center', gap: '6px',
             padding: '0.35rem 0.8rem', borderRadius: '9999px',
             background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(12px)',
             border: '1px solid rgba(0,212,255,0.3)',
-          }}>
-            <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#00D4FF', animation: 'pulse 1.5s ease-in-out infinite' }} />
-            <span style={{ color: '#00D4FF', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.1em' }}>LIVE DJ</span>
-          </div>
+          }}> */}
+            {/* <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#00D4FF', animation: 'pulse 1.5s ease-in-out infinite' }} /> */}
+            {/* <span style={{ color: '#00D4FF', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.1em' }}>LIVE DJ</span> */}
+          {/* </div> */}
         </div>
       </div>
 
       {/* Scroll indicator */}
       <div style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-        <span style={{ fontSize: '0.6rem', color: 'rgba(107,114,128,1)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Scroll</span>
+        {/* <span style={{ fontSize: '0.6rem', color: 'rgba(107,114,128,1)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Scroll</span> */}
         <div style={{ width: '20px', height: '32px', border: '2px solid rgba(0,212,255,0.4)', borderRadius: '9999px', display: 'flex', justifyContent: 'center', paddingTop: '6px', animation: 'bounce 2s infinite' }}>
           <div style={{ width: '4px', height: '8px', background: '#00D4FF', borderRadius: '2px' }} />
         </div>

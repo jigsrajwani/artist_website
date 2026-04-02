@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const SUPERPROFILE_URL = 'https://superprofile.bio/hpomusic';
 
 const navLinks = [
@@ -61,12 +63,8 @@ export default function Footer() {
           <div style={{ gridColumn: 'span 2' }}>
             {/* Logo */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-              <div style={{
-                width: '40px', height: '40px', borderRadius: '50%',
-                background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
-              }}>
-                <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, color: 'white', fontSize: '0.8rem' }}>HPO</span>
+              <div style={{ position: 'relative', width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', background: 'rgba(0,0,0,0.6)', border: '1px solid rgba(0,212,255,0.3)', flexShrink: 0 }}>
+                <Image src="/HPO Logo.png" alt="DJ HPO" fill style={{ objectFit: 'contain', padding: '4px' }} sizes="40px" />
               </div>
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, color: 'white', fontSize: '1.25rem' }}>
                 DJ{' '}

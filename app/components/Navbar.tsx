@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '#reels', label: 'Reels' },
@@ -37,9 +38,8 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
-          <div style={{ position: 'relative', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', opacity: 0.85 }} />
-            <span style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 900, color: 'white', fontSize: '0.8rem', zIndex: 1 }}>HPO</span>
+          <div style={{ position: 'relative', width: '40px', height: '40px', flexShrink: 0, borderRadius: '50%', overflow: 'hidden', background: 'rgba(0,0,0,0.6)', border: '1px solid rgba(0,212,255,0.3)' }}>
+            <Image src="/HPO Logo.png" alt="DJ HPO" fill style={{ objectFit: 'contain', padding: '4px' }} sizes="40px" />
           </div>
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, color: 'white', fontSize: '1.15rem' }}>
             DJ{' '}
