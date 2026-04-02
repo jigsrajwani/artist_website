@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 const achievements = [
-  { icon: '🎵', value: '50M+', label: 'Total Reel Views' },
+  { icon: '🎵', value: '70M+', label: 'Total Reel Views' },
   { icon: '👥', value: '100k+', label: 'Instagram Followers' },
   { icon: '🎧', value: '5+', label: 'Mashup Pack Volumes' },
   { icon: '🎤', value: '100+', label: 'Events Performed' },
@@ -11,18 +11,18 @@ const achievements = [
   { icon: '🌏', value: '5+', label: 'Years in Scene' },
 ];
 
-const tags = ['Bollywood Mashups', 'EDM', 'Club DJ', 'Viral Reels', 'Wedding DJ', 'Brand Collab'];
+// const tags = ['Bollywood Mashups', 'EDM', 'Club DJ', 'Viral Reels', 'Wedding DJ', 'Brand Collab'];
 
 const stageHighlights = [
-  { label: 'Nucleya',         emoji: '🎛️', color: 'rgba(0,212,255,0.12)',  border: 'rgba(0,212,255,0.3)'  },
-  { label: 'Jassie Gill',     emoji: '🎤', color: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.4)' },
-  { label: 'Parmish Verma',   emoji: '🔥', color: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.35)' },
-  { label: 'Darshan Rawal',   emoji: '🎵', color: 'rgba(236,72,153,0.12)', border: 'rgba(236,72,153,0.35)' },
-  { label: 'Seedhe Maut',     emoji: '⚡', color: 'rgba(234,179,8,0.12)',  border: 'rgba(234,179,8,0.35)'  },
-  { label: 'Jass Manak',      emoji: '🎙️', color: 'rgba(20,184,166,0.12)', border: 'rgba(20,184,166,0.35)' },
-  { label: 'Arjun Kanungo',   emoji: '🌟', color: 'rgba(99,102,241,0.12)', border: 'rgba(99,102,241,0.35)' },
-  { label: 'Almost Human',    emoji: '🎧', color: 'rgba(168,85,247,0.12)', border: 'rgba(168,85,247,0.35)' },
-  { label: 'Rebel Kid',       emoji: '💥', color: 'rgba(239,68,68,0.12)',  border: 'rgba(239,68,68,0.35)'  },
+  { label: 'Nucleya', emoji: '🎛️', color: 'rgba(0,212,255,0.12)', border: 'rgba(0,212,255,0.3)' },
+  { label: 'Jassie Gill', emoji: '🎤', color: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.4)' },
+  { label: 'Parmish Verma', emoji: '🔥', color: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.35)' },
+  { label: 'Darshan Rawal', emoji: '🎵', color: 'rgba(236,72,153,0.12)', border: 'rgba(236,72,153,0.35)' },
+  { label: 'Seedhe Maut', emoji: '⚡', color: 'rgba(234,179,8,0.12)', border: 'rgba(234,179,8,0.35)' },
+  { label: 'Jass Manak', emoji: '🎙️', color: 'rgba(20,184,166,0.12)', border: 'rgba(20,184,166,0.35)' },
+  { label: 'Arjun Kanungo', emoji: '🌟', color: 'rgba(99,102,241,0.12)', border: 'rgba(99,102,241,0.35)' },
+  { label: 'Almost Human', emoji: '🎧', color: 'rgba(168,85,247,0.12)', border: 'rgba(168,85,247,0.35)' },
+  { label: 'Rebel Kid', emoji: '💥', color: 'rgba(239,68,68,0.12)', border: 'rgba(239,68,68,0.35)' },
 ];
 
 const featuredArtists = ['Vishal Mishra', 'Aditya Rikhari'];
@@ -145,7 +145,7 @@ export default function AboutSection() {
               padding: '0.6rem 1rem',
             }}>
               <div style={{ fontSize: '11px', color: 'rgba(156,163,175,1)', marginBottom: '2px' }}>Total Views</div>
-              <div style={{ fontSize: '1.2rem', fontWeight: 900, background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>50M+</div>
+              <div style={{ fontSize: '1.2rem', fontWeight: 900, background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>70M+</div>
             </div>
 
             {/* Floating stat badge — bottom left */}
@@ -229,7 +229,7 @@ export default function AboutSection() {
             </div>
 
             {/* Style tags */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
+            {/* <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
               {tags.map((tag) => (
                 <span
                   key={tag}
@@ -246,7 +246,7 @@ export default function AboutSection() {
                   {tag}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             {/* Achievements grid */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem' }}>

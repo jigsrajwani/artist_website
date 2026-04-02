@@ -18,7 +18,7 @@ const reels: Reel[] = [
   { id: 'reel2', views: '3.8M', title: 'Pal Pal x Leke Pehla Pehla Pyaar 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DUn3h0UAYpX/', thumbnail: '/thumbnails/reel-DUn3h0UAYpX.jpg' },
   { id: 'reel3', views: '4.5M', title: 'Gal Sun x Todha Resham 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DRr01m8AWnF/', thumbnail: '/thumbnails/reel-DRr01m8AWnF.jpg' },
 ];
-  
+
 function ReelCard({ reel }: { reel: Reel }) {
   const [hovered, setHovered] = useState(false);
 
@@ -109,7 +109,7 @@ export default function ReelsSection() {
             <span style={{ background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Reels</span>
           </h2>
           <p style={{ color: 'rgba(156,163,175,1)', maxWidth: '36rem', margin: '0 auto 1.25rem' }}>
-            50M+ views across Instagram. Real music, real energy, real impact.
+            70M+ views across Instagram. Real music, real energy, real impact.
           </p>
           <a
             id="instagram-follow-btn"

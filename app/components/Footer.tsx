@@ -73,7 +73,7 @@ export default function Footer() {
             </div>
 
             <p style={{ color: 'rgba(156,163,175,1)', fontSize: '0.875rem', lineHeight: 1.7, maxWidth: '22rem', marginBottom: '1.25rem' }}>
-              Viral Mashup Artist creating high-energy DJ experiences. 50M+ views on Instagram.
+              Viral Mashup Artist creating high-energy DJ experiences. 70M+ views on Instagram.
             </p>
 
             {/* Social badges */}

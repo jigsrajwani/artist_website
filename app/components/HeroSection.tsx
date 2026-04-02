@@ -156,18 +156,18 @@ export default function HeroSection() {
             opacity: mounted ? 1 : 0, transform: mounted ? 'none' : 'translateY(16px)',
             transition: 'opacity 0.7s 0.6s, transform 0.7s 0.6s',
           }}>
-            <a id="hero-view-reels" href="#reels"
+            <a id="hero-view-reels" href="https://drive.google.com/drive/folders/1jfahrbHcaNF_OylcgawQeoS3G0-B3iUj" target="_blank"
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.8rem 1.5rem', borderRadius: '9999px', background: 'linear-gradient(135deg, #00D4FF, #2563eb)', color: 'white', fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', boxShadow: '0 0 20px rgba(0,212,255,0.3)', transition: 'opacity 0.2s, transform 0.2s' }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.opacity = '0.9'; (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-2px)'; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.opacity = '1'; (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)'; }}>
-              <svg style={{ width: '15px', height: '15px', fill: 'white', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-              View Reels
+              {/* <svg style={{ width: '15px', height: '15px', fill: 'white', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg> */}
+              Press Kit
             </a>
             <a id="hero-download-mashups" href="https://superprofile.bio/hpomusic" target="_blank" rel="noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.8rem 1.5rem', borderRadius: '9999px', background: 'transparent', border: '2px solid rgba(139,92,246,0.6)', color: '#a78bfa', fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', transition: 'background 0.2s, transform 0.2s' }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(139,92,246,0.15)'; (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-2px)'; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = 'transparent'; (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)'; }}>
-              <svg style={{ width: '15px', height: '15px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" /></svg>
+              {/* <svg style={{ width: '15px', height: '15px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" /></svg> */}
               Download Mashups
             </a>
             <a id="hero-book-now" href="#contact"

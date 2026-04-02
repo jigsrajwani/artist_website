@@ -141,6 +141,7 @@ export default function MusicSection() {
                 <svg style={{ width: '16px', height: '16px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d={spIconPath} /></svg>
                 Follow on Spotify
               </a>
+              <br />
 
               {/* SoundCloud */}
               <a
