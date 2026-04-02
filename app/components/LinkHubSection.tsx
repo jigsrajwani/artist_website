@@ -30,7 +30,7 @@ const links = [
     label: 'YouTube',
     handle: '@mashbyhpo',
     description: 'Watch full mix sets & performances',
-    url: 'https://www.youtube.com/@mashbyhpo',
+    url: 'https://www.youtube.com/@hpomashups',
     iconPath: 'M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z',
     iconBg: 'linear-gradient(135deg, #dc2626, #b91c1c)',
     primary: false,
@@ -131,14 +131,14 @@ export default function LinkHubSection() {
                 transition: 'transform 0.2s, box-shadow 0.2s',
                 ...(link.primary
                   ? {
-                      background: 'linear-gradient(135deg, #00D4FF, #2563eb)',
-                      boxShadow: '0 4px 24px rgba(0,212,255,0.2)',
-                    }
+                    background: 'linear-gradient(135deg, #00D4FF, #2563eb)',
+                    boxShadow: '0 4px 24px rgba(0,212,255,0.2)',
+                  }
                   : {
-                      background: 'rgba(255,255,255,0.04)',
-                      border: '1px solid rgba(255,255,255,0.1)',
-                      backdropFilter: 'blur(12px)',
-                    }),
+                    background: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    backdropFilter: 'blur(12px)',
+                  }),
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-2px)';

@@ -81,7 +81,7 @@ export default function Footer() {
               {[
                 { href: 'https://www.instagram.com/mashbyhpo/', label: '@mashbyhpo', color: '#f472b6' },
                 { href: 'https://www.instagram.com/hpo_music/', label: '@hpo_music', color: '#f472b6' },
-                { href: 'https://www.youtube.com/@mashbyhpo', label: 'YouTube', color: '#f87171' },
+                { href: 'https://www.youtube.com/@hpomashups', label: 'YouTube', color: '#f87171' },
                 { href: SUPERPROFILE_URL, label: 'Superprofile', color: '#00D4FF' },
               ].map((s) => (
                 <a

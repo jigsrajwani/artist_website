@@ -186,41 +186,41 @@ export default function HeroSection() {
           transition: 'opacity 0.9s 0.3s, transform 0.9s 0.3s',
           position: 'relative',
         }}>
-          {/* Outer neon glow ring */}
+          {/* Dark gradient blur to reduce background noise behind subject */}
           <div style={{
-            position: 'absolute', inset: '-12px',
-            borderRadius: '1.75rem',
-            background: 'linear-gradient(135deg, rgba(0,212,255,0.25), rgba(139,92,246,0.25))',
-            filter: 'blur(20px)',
+            position: 'absolute', inset: '-15%',
+            background: 'radial-gradient(circle at center, rgba(3,7,18,0.9) 0%, rgba(3,7,18,0.7) 40%, transparent 75%)',
             zIndex: 0,
-          }} />
-          {/* Secondary blue glow bottom */}
-          <div style={{
-            position: 'absolute', bottom: '-20px', left: '10%', right: '10%', height: '60px',
-            background: 'rgba(0,212,255,0.2)', filter: 'blur(24px)', borderRadius: '50%', zIndex: 0,
+            pointerEvents: 'none',
           }} />
 
-          {/* Photo frame */}
+          {/* Soft ambient blue/purple glow behind the artist */}
+          <div style={{
+            position: 'absolute', top: '5%', left: '10%', right: '10%', bottom: '5%',
+            background: 'radial-gradient(ellipse at center, rgba(0,212,255,0.18) 0%, rgba(139,92,246,0.15) 50%, transparent 80%)', 
+            filter: 'blur(50px)', zIndex: 0,
+            pointerEvents: 'none',
+          }} />
+
+          {/* Photo with edge fading mask and drop shadows */}
           <div style={{
             position: 'relative', zIndex: 1,
-            width: '100%', maxWidth: '440px',
-            aspectRatio: '3 / 4',
-            borderRadius: '1.5rem',
-            overflow: 'hidden',
-            border: '2px solid rgba(0,212,255,0.2)',
-            boxShadow: '0 0 60px rgba(0,212,255,0.12), 0 0 120px rgba(139,92,246,0.1), inset 0 0 30px rgba(0,0,0,0.3)',
+            width: '115%', maxWidth: '560px',
+            marginTop: '-2.5rem', // shift slightly upward to align with headings
+            aspectRatio: '1 / 1.15', // slightly squarer to reduce excessive vertical padding
+            filter: 'drop-shadow(0 0 40px rgba(0,212,255,0.25)) drop-shadow(0 20px 50px rgba(139,92,246,0.25))',
+            WebkitMaskImage: 'radial-gradient(ellipse at 50% 45%, black 60%, transparent 90%)',
+            maskImage: 'radial-gradient(ellipse at 50% 45%, black 60%, transparent 90%)',
           }}>
             <Image
               src="/artist.jpg"
               alt="DJ HPO – Viral Mashup Artist"
               fill
               priority
-              quality={95}
+              quality={100}
               style={{ objectFit: 'cover', objectPosition: 'center top' }}
-              sizes="(max-width: 768px) 90vw, 440px"
+              sizes="(max-width: 768px) 100vw, 560px"
             />
-            {/* Subtle inner gradient to blend into BG at bottom */}
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(3,7,18,0.55) 0%, transparent 40%)' }} />
           </div>
 
           {/* Floating "Live" badge */}

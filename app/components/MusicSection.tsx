@@ -2,7 +2,7 @@
 
 const YOUTUBE_VIDEO_ID = 'lJsoBJ6mhbU';
 const SPOTIFY_ARTIST_ID = '1SJUQAt9760R13860NjAEJ';
-const YOUTUBE_CHANNEL = 'https://www.youtube.com/@mashbyhpo';
+const YOUTUBE_CHANNEL = 'https://www.youtube.com/@hpomashups';
 const SPOTIFY_ARTIST_URL = `https://open.spotify.com/artist/${SPOTIFY_ARTIST_ID}`;
 const SOUNDCLOUD_URL = 'https://m.soundcloud.com/hardik-puri-oal';
 
@@ -12,9 +12,9 @@ const SOUNDCLOUD_URL = 'https://m.soundcloud.com/hardik-puri-oal';
 // ];
 
 const soundcloudTracks = [
-  { id: 'sc1', title: 'Midnight Vibes – Extended Set',    duration: '45:23', plays: '12K', bg: 'linear-gradient(135deg,#f97316,#d97706)' },
-  { id: 'sc2', title: 'Bollywood Mashup Compilation',     duration: '32:10', plays: '28K', bg: 'linear-gradient(135deg,#00D4FF,#2563eb)' },
-  { id: 'sc3', title: 'Club Night Special Mix',           duration: '58:45', plays: '9K',  bg: 'linear-gradient(135deg,#8B5CF6,#7c3aed)' },
+  { id: 'sc1', title: 'Midnight Vibes – Extended Set', duration: '45:23', plays: '12K', bg: 'linear-gradient(135deg,#f97316,#d97706)' },
+  { id: 'sc2', title: 'Bollywood Mashup Compilation', duration: '32:10', plays: '28K', bg: 'linear-gradient(135deg,#00D4FF,#2563eb)' },
+  { id: 'sc3', title: 'Club Night Special Mix', duration: '58:45', plays: '9K', bg: 'linear-gradient(135deg,#8B5CF6,#7c3aed)' },
 ];
 
 function YouTubeEmbed({ videoId, title }: { videoId: string; title: string }) {
@@ -153,7 +153,7 @@ export default function MusicSection() {
                 onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(249,115,22,0.08)'}
                 onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.background = 'transparent'}
               >
-                <svg style={{ width: '16px', height: '16px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M11.56 8.87V17h8.76c.95 0 1.68-.75 1.68-1.68 0-.93-.74-1.69-1.68-1.69-.1 0-.2.01-.3.03C19.9 11.92 18.6 11 17.07 11c-.1 0-.19.01-.29.02C16.25 9.28 14.55 8 12.57 8c-.36 0-.7.05-1.01.14zM0 15.32C0 16.25.75 17 1.68 17s1.68-.75 1.68-1.68V11.9c0-.93-.75-1.68-1.68-1.68S0 10.97 0 11.9v3.42zm5.04 1.01c0 .56.45 1.01 1.01 1.01s1.01-.45 1.01-1.01V9.67c0-.56-.45-1.01-1.01-1.01S5.04 9.11 5.04 9.67v6.66zm3.36.34c0 .37.3.67.67.67s.67-.3.67-.67V8.53c0-.37-.3-.67-.67-.67s-.67.3-.67.67v8.14zm3.36.33c0 .18.15.33.34.33.18 0 .33-.15.33-.33V8.87c-.1-.03-.22-.05-.33-.05-.19 0-.34.15-.34.34v8.14z"/></svg>
+                <svg style={{ width: '16px', height: '16px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M11.56 8.87V17h8.76c.95 0 1.68-.75 1.68-1.68 0-.93-.74-1.69-1.68-1.69-.1 0-.2.01-.3.03C19.9 11.92 18.6 11 17.07 11c-.1 0-.19.01-.29.02C16.25 9.28 14.55 8 12.57 8c-.36 0-.7.05-1.01.14zM0 15.32C0 16.25.75 17 1.68 17s1.68-.75 1.68-1.68V11.9c0-.93-.75-1.68-1.68-1.68S0 10.97 0 11.9v3.42zm5.04 1.01c0 .56.45 1.01 1.01 1.01s1.01-.45 1.01-1.01V9.67c0-.56-.45-1.01-1.01-1.01S5.04 9.11 5.04 9.67v6.66zm3.36.34c0 .37.3.67.67.67s.67-.3.67-.67V8.53c0-.37-.3-.67-.67-.67s-.67.3-.67.67v8.14zm3.36.33c0 .18.15.33.34.33.18 0 .33-.15.33-.33V8.87c-.1-.03-.22-.05-.33-.05-.19 0-.34.15-.34.34v8.14z" /></svg>
                 Listen on SoundCloud
               </a>
             </div>
