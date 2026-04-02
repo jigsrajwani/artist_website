@@ -1,9 +1,15 @@
 'use client';
 
-const YOUTUBE_VIDEO_ID = 'FoTOy7Tnl30';
+const YOUTUBE_VIDEO_ID = 'lJsoBJ6mhbU';
 const SPOTIFY_ARTIST_ID = '1SJUQAt9760R13860NjAEJ';
 const YOUTUBE_CHANNEL = 'https://www.youtube.com/@mashbyhpo';
 const SPOTIFY_ARTIST_URL = `https://open.spotify.com/artist/${SPOTIFY_ARTIST_ID}`;
+const SOUNDCLOUD_URL = 'https://m.soundcloud.com/hardik-puri-oal';
+
+// const featuredArtists = [
+//   'Vishal Mishra', 'Aditya Rikhari', 'Armaan Malik',
+//   'Jubin Nautiyal', 'Arijit Singh', 'Neha Kakkar',
+// ];
 
 const soundcloudTracks = [
   { id: 'sc1', title: 'Midnight Vibes – Extended Set',    duration: '45:23', plays: '12K', bg: 'linear-gradient(135deg,#f97316,#d97706)' },
@@ -81,6 +87,18 @@ export default function MusicSection() {
               <h3 style={{ color: 'white', fontWeight: 700, fontSize: '1.1rem' }}>YouTube</h3>
             </div>
 
+            {/* Featured artists pills */}
+            {/* <div>
+              <p style={{ color: 'rgba(107,114,128,1)', fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.5rem', fontWeight: 600 }}>🎵 Mashups on songs by</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                {featuredArtists.map((artist) => (
+                  <span key={artist} style={{ padding: '0.25rem 0.7rem', borderRadius: '9999px', fontSize: '0.72rem', fontWeight: 600, color: '#a78bfa', background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.25)' }}>
+                    {artist}
+                  </span>
+                ))}
+              </div>
+            </div> */}
+
             <YouTubeEmbed videoId={YOUTUBE_VIDEO_ID} title="DJ HPO – Bollywood Fusion Mix" />
 
             <a
@@ -122,6 +140,20 @@ export default function MusicSection() {
               >
                 <svg style={{ width: '16px', height: '16px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d={spIconPath} /></svg>
                 Follow on Spotify
+              </a>
+
+              {/* SoundCloud */}
+              <a
+                id="soundcloud-follow-btn"
+                href={SOUNDCLOUD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '0.75rem', borderRadius: '9999px', border: '1px solid rgba(249,115,22,0.4)', color: '#f97316', fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', transition: 'background 0.2s' }}
+                onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(249,115,22,0.08)'}
+                onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.background = 'transparent'}
+              >
+                <svg style={{ width: '16px', height: '16px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M11.56 8.87V17h8.76c.95 0 1.68-.75 1.68-1.68 0-.93-.74-1.69-1.68-1.69-.1 0-.2.01-.3.03C19.9 11.92 18.6 11 17.07 11c-.1 0-.19.01-.29.02C16.25 9.28 14.55 8 12.57 8c-.36 0-.7.05-1.01.14zM0 15.32C0 16.25.75 17 1.68 17s1.68-.75 1.68-1.68V11.9c0-.93-.75-1.68-1.68-1.68S0 10.97 0 11.9v3.42zm5.04 1.01c0 .56.45 1.01 1.01 1.01s1.01-.45 1.01-1.01V9.67c0-.56-.45-1.01-1.01-1.01S5.04 9.11 5.04 9.67v6.66zm3.36.34c0 .37.3.67.67.67s.67-.3.67-.67V8.53c0-.37-.3-.67-.67-.67s-.67.3-.67.67v8.14zm3.36.33c0 .18.15.33.34.33.18 0 .33-.15.33-.33V8.87c-.1-.03-.22-.05-.33-.05-.19 0-.34.15-.34.34v8.14z"/></svg>
+                Listen on SoundCloud
               </a>
             </div>
           </div>

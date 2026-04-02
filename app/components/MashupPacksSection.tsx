@@ -13,35 +13,49 @@ interface Pack {
   trackCount: number;
   tag: string;
   tagBg: string;
+  url: string;
 }
 
 const packs: Pack[] = [
   {
     id: 'pack1',
-    title: 'Bollywood Mashup Pack Vol.1',
-    description: 'The ultimate Bollywood mashup collection featuring the biggest hits blended seamlessly. Perfect for parties and weddings.',
-    image: '/pack-vol1.png',
-    trackCount: 15,
+    title: 'HPO Mash-Mix Vol.2',
+    description: 'High-energy club mashups designed to keep the dance floor alive. Premium EDM x Bollywood crossovers.',
+    image: '/pack-vol2.png',
+    trackCount: 28,
     tag: 'Bestseller',
     tagBg: 'linear-gradient(135deg, #00D4FF, #2563eb)',
+    url: 'https://superprofile.bio/vp/6949309543acb500131c6aaf',
   },
   {
     id: 'pack2',
-    title: 'Club Bangers Mashup Pack Vol.2',
-    description: 'High-energy club mashups designed to keep the dance floor alive. Premium EDM x Bollywood crossovers.',
-    image: '/pack-vol2.png',
-    trackCount: 12,
-    tag: 'New Drop',
-    tagBg: 'linear-gradient(135deg, #a855f7, #db2777)',
+    title: 'HPO Mash-Mix Vol.3',
+    description: 'A nostalgic journey through the golden era of Bollywood. Retro classics remixed for the modern dancefloor.',
+    image: '/pack-vol3.png',
+    trackCount: 35,
+    tag: 'Fan Favorite',
+    tagBg: 'linear-gradient(135deg, #f59e0b, #ea580c)',
+    url: 'https://superprofile.bio/vp/694929a67dc875001357a33a',
   },
   {
     id: 'pack3',
-    title: 'Retro Hits Mashup Pack Vol.3',
-    description: 'A nostalgic journey through the golden era of Bollywood. Retro classics remixed for the modern dancefloor.',
-    image: '/pack-vol3.png',
-    trackCount: 18,
-    tag: 'Fan Favorite',
-    tagBg: 'linear-gradient(135deg, #f59e0b, #ea580c)',
+    title: 'Dhurandhar Mashup Pack',
+    description: 'The ultimate power-packed mashup collection — raw energy, desi beats, and unstoppable vibes for any set.',
+    image: '/pack-vol1.png',
+    trackCount: 7,
+    tag: 'New Drop',
+    tagBg: 'linear-gradient(135deg, #a855f7, #db2777)',
+    url: 'https://superprofile.bio/vp/6974d6352b7b4e00137c1edc',
+  },
+  {
+    id: 'pack4',
+    title: 'DJ Master Library – 6000 Tracks',
+    description: 'The complete professional DJ toolkit. 6000 curated tracks — Bollywood, EDM, retro, and club essentials in one mega pack.',
+    image: '/master-library.png',
+    trackCount: 6000,
+    tag: '🔥 Mega Pack',
+    tagBg: 'linear-gradient(135deg, #dc2626, #ea580c)',
+    url: 'https://superprofile.bio/vp/6988a29c75efa100131d85c0',
   },
 ];
 
@@ -91,7 +105,7 @@ function PackCard({ pack }: { pack: Pack }) {
         {/* Hover overlay + play button */}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.15) 100%)', opacity: hovered ? 1 : 0, transition: 'opacity 0.3s', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <a
-            href={SUPERPROFILE_URL}
+            href={pack.url}
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -134,7 +148,7 @@ function PackCard({ pack }: { pack: Pack }) {
         {/* CTA */}
         <a
           id={`download-${pack.id}`}
-          href={SUPERPROFILE_URL}
+          href={pack.url}
           target="_blank"
           rel="noopener noreferrer"
           style={{
