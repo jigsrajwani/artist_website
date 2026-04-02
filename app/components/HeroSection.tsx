@@ -78,7 +78,7 @@ export default function HeroSection() {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
 
           {/* Instagram badge */}
-          <div style={{
+          <div className="hero-badge" style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem', alignSelf: 'flex-start',
             padding: '0.45rem 1rem', borderRadius: '9999px',
             border: '1px solid rgba(0,212,255,0.3)', background: 'rgba(0,0,0,0.5)',
@@ -253,6 +253,7 @@ export default function HeroSection() {
           .hero-grid { grid-template-columns: 1fr !important; padding-top: 7rem !important; gap: 2rem !important; text-align: center; }
           .hero-grid > div:first-child { align-items: center; }
           .hero-grid > div:last-child { order: -1; max-width: 280px; margin: 0 auto; }
+          .hero-badge { align-self: center !important; }
         }
       `}</style>
     </section>
