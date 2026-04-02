@@ -190,7 +190,7 @@ export default function AboutSection() {
                 <span style={{ color: '#a78bfa', fontWeight: 600 }}>100+ events</span> — covering every major campus chain in Rajasthan and major colleges &amp; clubs across North India.
               </p>
               <p style={{ color: 'rgba(209,213,219,1)', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                Whether it&apos;s electrifying wedding sets, brand promotions, or sharing the stage with top Bollywood & EDM artists — DJ HPO brings unmatched energy to every performance. Follow{' '}
+                Follow{' '}
                 <a href="https://www.instagram.com/hpo_music/" target="_blank" rel="noopener noreferrer" style={{ color: '#f472b6', fontWeight: 600, textDecoration: 'none' }}>@hpo_music</a>{' '}
                 for behind-the-scenes from shows, concerts &amp; weddings.
               </p>

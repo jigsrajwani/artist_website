@@ -19,43 +19,43 @@ export default function Home() {
       <HeroSection />
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} /> */}
 
       {/* 2. Viral Reels */}
       <ReelsSection />
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(139,92,246,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(139,92,246,0.2), transparent)' }} /> */}
 
       {/* 3. Mashup Packs */}
       <MashupPacksSection />
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} /> */}
 
       {/* 4. Music / Productions */}
       <MusicSection />
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(139,92,246,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(139,92,246,0.2), transparent)' }} /> */}
 
       {/* 5. About */}
       <AboutSection />
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} /> */}
 
       {/* 6. Brand Collaborations */}
       <CollabSection />
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(139,92,246,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(139,92,246,0.2), transparent)' }} /> */}
 
       {/* 7. Link Hub */}
       {/* <LinkHubSection /> */}
 
       {/* Section separator */}
-      <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} />
+      {/* <div className="h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.2), transparent)' }} /> */}
 
       {/* 8. Contact / Booking */}
       <ContactSection />

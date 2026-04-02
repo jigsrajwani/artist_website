@@ -37,8 +37,8 @@ const waveHeights = [20, 36, 14, 38, 10, 28, 40, 18, 32, 8, 24, 36];
 
 const stats = [
   { label: 'Instagram Followers', value: 100, suffix: 'K+' },
-  { label: 'Total Reel Views',    value: 50,  suffix: 'M+' },
-  { label: 'YouTube Subscribers', value: 100, suffix: 'K+' },
+  { label: 'Total Reel Views',    value: 70,  suffix: 'M+' },
+  { label: 'YouTube Subscribers', value: 108, suffix: 'K+' },
   { label: 'Events Performed',    value: 100, suffix: '+' },
 ];
 

@@ -43,12 +43,9 @@ const collabTypes = [
 ];
 
 const brandLogos = [
-  { name: 'Brand A', initials: 'OLA', bg: 'linear-gradient(135deg,#0891b2,#1d4ed8)' },
-  { name: 'Brand B', initials: 'Vida', bg: 'linear-gradient(135deg,#7c3aed,#6d28d9)' },
-  { name: 'Brand C', initials: 'GharSoaps', bg: 'linear-gradient(135deg,#db2777,#be185d)' },
-  // { name: 'Brand D', initials: 'BD', bg: 'linear-gradient(135deg,#d97706,#c2410c)' },
-  // { name: 'Brand E', initials: 'BE', bg: 'linear-gradient(135deg,#059669,#0d9488)' },
-  // { name: 'Brand F', initials: 'BF', bg: 'linear-gradient(135deg,#dc2626,#be185d)' },
+  { name: 'OLA', colorA: '#00D4FF', colorB: '#2563eb' },
+  { name: 'VIDA', colorA: '#a855f7', colorB: '#7c3aed' },
+  { name: 'GharSoaps', colorA: '#f472b6', colorB: '#be185d' },
 ];
 
 export default function CollabSection() {
@@ -141,26 +138,56 @@ export default function CollabSection() {
 
         {/* ── Brand Logos ── */}
         <div style={{ marginBottom: '4rem' }}>
-          <p style={{ textAlign: 'center', color: 'rgba(107,114,128,1)', fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
+          <p style={{ textAlign: 'center', color: 'rgba(107,114,128,1)', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '2rem' }}>
             Trusted by brands &amp; clients
           </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.25rem' }}>
             {brandLogos.map((brand) => (
               <div
                 key={brand.name}
                 style={{
-                  width: '100px', height: '80px',
-                  borderRadius: '1rem',
-                  background: brand.bg,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  opacity: 0.55,
+                  padding: '1rem 2.5rem',
+                  borderRadius: '9999px',
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  backdropFilter: 'blur(8px)',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
                   cursor: 'pointer',
-                  transition: 'opacity 0.3s, transform 0.3s',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.opacity = '1'; (e.currentTarget as HTMLDivElement).style.transform = 'scale(1.05)'; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.opacity = '0.55'; (e.currentTarget as HTMLDivElement).style.transform = 'scale(1)'; }}
+                onMouseEnter={(e) => { 
+                  (e.currentTarget as HTMLDivElement).style.background = 'rgba(255,255,255,0.08)'; 
+                  (e.currentTarget as HTMLDivElement).style.borderColor = `rgba(255,255,255,0.2)`; 
+                  (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)';
+                  (e.currentTarget as HTMLDivElement).style.boxShadow = `0 10px 30px ${brand.colorA}40`;
+                }}
+                onMouseLeave={(e) => { 
+                  (e.currentTarget as HTMLDivElement).style.background = 'rgba(255,255,255,0.03)';
+                  (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(255,255,255,0.08)';
+                  (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
+                  (e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+                }}
               >
-                <span style={{ color: 'white', fontWeight: 900, fontSize: '0.875rem' }}>{brand.initials}</span>
+                <div style={{ position: 'relative' }}>
+                  {/* Subtle wordmark glow */}
+                  <div style={{
+                    position: 'absolute', inset: '-10px',
+                    background: `linear-gradient(135deg, ${brand.colorA}, ${brand.colorB})`,
+                    filter: 'blur(15px)', opacity: 0.15, zIndex: 0,
+                    borderRadius: '20px'
+                  }} className="glow-target" />
+                  
+                  {/* Text wordmark */}
+                  <span style={{ 
+                    position: 'relative', zIndex: 1,
+                    fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.35rem', letterSpacing: '0.08em',
+                    background: `linear-gradient(135deg, ${brand.colorA}, ${brand.colorB})`,
+                    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                  }}>
+                    {brand.name}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
