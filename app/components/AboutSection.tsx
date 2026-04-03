@@ -2,11 +2,13 @@
 
 import Image from 'next/image';
 
+import statsData from '../data/stats.json';
+
 const achievements = [
-  { icon: '🎵', value: '70M+', label: 'Total Reel Views' },
-  { icon: '👥', value: '100k+', label: 'Instagram Followers' },
-  { icon: '🎧', value: '5+', label: 'Mashup Pack Volumes' },
-  { icon: '🎤', value: '100+', label: 'Events Performed' },
+  { icon: '🎵', value: `${statsData.totalReelViews}${statsData.totalReelViewsSuffix}`, label: 'Total Reel Views' },
+  { icon: '👥', value: `${statsData.instagramFollowers}${statsData.instagramFollowersSuffix}`, label: 'Instagram Followers' },
+  { icon: '🎧', value: `${statsData.mashupPacksReleased ?? 5}${statsData.mashupPacksReleasedSuffix ?? '+'}`, label: 'Mashup Pack Volumes' },
+  { icon: '🎤', value: `${statsData.eventsPerformed ?? 100}${statsData.eventsPerformedSuffix ?? '+'}`, label: 'Events Performed' },
   { icon: '🔥', value: '100+', label: 'Viral Mashups Created' },
   { icon: '🌏', value: '5+', label: 'Years in Scene' },
 ];
@@ -145,7 +147,7 @@ export default function AboutSection() {
               padding: '0.6rem 1rem',
             }}>
               <div style={{ fontSize: '11px', color: 'rgba(156,163,175,1)', marginBottom: '2px' }}>Total Views</div>
-              <div style={{ fontSize: '1.2rem', fontWeight: 900, background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>70M+</div>
+              <div style={{ fontSize: '1.2rem', fontWeight: 900, background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{statsData.totalReelViews}{statsData.totalReelViewsSuffix}</div>
             </div>
 
             {/* Floating stat badge — bottom left */}
@@ -158,7 +160,7 @@ export default function AboutSection() {
               padding: '0.6rem 1rem',
             }}>
               <div style={{ fontSize: '11px', color: 'rgba(156,163,175,1)', marginBottom: '2px' }}>Followers</div>
-              <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#a78bfa' }}>100k+</div>
+              <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#a78bfa' }}>{statsData.instagramFollowers}{statsData.instagramFollowersSuffix}</div>
             </div>
           </div>
 
@@ -179,20 +181,10 @@ export default function AboutSection() {
             {/* Bio text */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.75rem' }}>
               <p style={{ color: 'rgba(209,213,219,1)', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                DJ HPO is a viral mashup artist with{' '}
-                <span style={{ color: '#00D4FF', fontWeight: 600 }}>5+ years in the scene</span>,
-                known for creating high-energy Bollywood and EDM mashups that have taken social media by storm. With a signature style that blends Indian music with global club sounds, HPO has built a massive following across platforms.
+                DJ HPO is a viral mashup artist known for creating high-energy Bollywood and EDM edits that have taken social media by storm. He captured the internet's heart with his massive hit series <span style={{ color: '#00D4FF', fontWeight: 600 }}>"Mix with Mom"</span> and <span style={{ color: '#a78bfa', fontWeight: 600 }}>"Mix with Dad"</span>—blending wholesome family moments with explosive club sounds to amass over <span style={{ color: '#00D4FF', fontWeight: 600 }}>{statsData.totalReelViews} million total reel views</span>.
               </p>
               <p style={{ color: 'rgba(209,213,219,1)', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                Starting as a bedroom producer, DJ HPO quickly rose to prominence through viral Instagram reels, amassing over{' '}
-                <span style={{ color: '#00D4FF', fontWeight: 600 }}>50 million total views</span>{' '}
-                and a passionate community of music lovers. HPO has played{' '}
-                <span style={{ color: '#a78bfa', fontWeight: 600 }}>100+ events</span> — covering every major campus chain in Rajasthan and major colleges &amp; clubs across North India.
-              </p>
-              <p style={{ color: 'rgba(209,213,219,1)', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                Follow{' '}
-                <a href="https://www.instagram.com/hpo_music/" target="_blank" rel="noopener noreferrer" style={{ color: '#f472b6', fontWeight: 600, textDecoration: 'none' }}>@hpo_music</a>{' '}
-                for behind-the-scenes from shows, concerts &amp; weddings.
+                Beyond his viral reels with family and friends, DJ HPO is a powerhouse on the live stage. He has played <span style={{ color: '#a78bfa', fontWeight: 600 }}>{statsData.eventsPerformed ?? 100}{statsData.eventsPerformedSuffix ?? '+'} events</span>, shutting down major campus chains in Rajasthan and headlining premium colleges &amp; clubs throughout North India.
               </p>
             </div>
 

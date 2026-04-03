@@ -30,7 +30,7 @@ const packs: Pack[] = [
   {
     id: 'pack2',
     title: 'HPO Mash-Mix Vol.3',
-    description: 'A nostalgic journey through the golden era of Bollywood. Retro classics remixed for the modern dancefloor.',
+    description: 'A premium collection of viral trending edits, Afro grooves, and soothing blends. Modern Bollywood meets global club sounds.',
     image: '/pack-vol3.png',
     trackCount: 35,
     tag: 'Fan Favorite',
