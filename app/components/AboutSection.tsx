@@ -218,7 +218,7 @@ export default function AboutSection() {
 
             {/* ── Featured Artists ── */}
             <div style={{ marginBottom: '1.75rem' }}>
-              <p style={{ color: 'rgba(107,114,128,1)', fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.75rem', fontWeight: 600 }}>🎵 Mashups on songs by</p>
+              <p style={{ color: 'rgba(107,114,128,1)', fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.75rem', fontWeight: 600 }}>🎵 Promotional mashups</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                 {featuredArtists.map((artist) => (
                   <span key={artist} style={{ padding: '0.3rem 0.75rem', borderRadius: '9999px', fontSize: '0.72rem', fontWeight: 600, color: '#a78bfa', background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.25)' }}>

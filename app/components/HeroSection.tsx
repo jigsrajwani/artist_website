@@ -78,17 +78,18 @@ export default function HeroSection() {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
 
           {/* Instagram badge */}
-          <div className="hero-badge" style={{
+          <a className="hero-badge" href="https://www.instagram.com/mashbyhpo/" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem', alignSelf: 'flex-start',
             padding: '0.45rem 1rem', borderRadius: '9999px',
             border: '1px solid rgba(0,212,255,0.3)', background: 'rgba(0,0,0,0.5)',
             backdropFilter: 'blur(8px)', marginBottom: '1.5rem',
             opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(16px)',
             transition: 'opacity 0.7s, transform 0.7s',
+            textDecoration: 'none'
           }}>
             <svg style={{ width: '14px', height: '14px', fill: '#00D4FF', flexShrink: 0 }} viewBox="0 0 24 24"><path d={igPath} /></svg>
             <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#00D4FF', letterSpacing: '0.05em' }}>@mashbyhpo</span>
-          </div>
+          </a>
 
           {/* Title */}
           <h1 style={{
