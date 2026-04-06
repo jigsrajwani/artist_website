@@ -27,7 +27,7 @@ const stageHighlights = [
   { label: 'Rebel Kid', emoji: '💥', color: 'rgba(239,68,68,0.12)', border: 'rgba(239,68,68,0.35)' },
 ];
 
-const featuredArtists = ['Vishal Mishra', 'Aditya Rikhari'];
+const featuredArtists = ['Vishal Mishra', 'Aditya Rikhari', 'Amit Trivedi'];
 
 const waveHeights = [6, 20, 10, 28, 8, 24, 32, 12, 26, 6, 18, 30, 10, 22, 8, 28, 14, 24, 10, 18];
 
