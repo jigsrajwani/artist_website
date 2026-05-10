@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://djhpo.vercel.app"),
   applicationName: "DJ HPO",
   title: "DJ HPO – Viral Mashup Artist | Book Now",
-  description: "DJ HPO is a viral mashup artist creating high-energy mashups & DJ experiences. 70M+ views. Book for events, download mashup packs, brand collaborations. @mashbyhpo",
+  description: "DJ HPO is a viral mashup artist creating high-energy mashups & DJ experiences. 60M+ views. Book for events, download mashup packs, brand collaborations. @mashbyhpo",
   keywords: ["DJ HPO", "mashup artist", "viral mashups", "DJ booking", "Bollywood mashup", "DJ India", "@mashbyhpo"],
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "DJ HPO – Viral Mashup Artist",
-    description: "Creating high-energy viral mashups. 70M+ views. Book for events & brand deals.",
+    description: "Creating high-energy viral mashups. 60M+ views. Book for events & brand deals.",
     siteName: "DJ HPO",
     type: "website",
     url: "https://djhpo.vercel.app",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DJ HPO – Viral Mashup Artist",
-    description: "Creating high-energy viral mashups. 70M+ views.",
+    description: "Creating high-energy viral mashups. 60M+ views.",
     images: ["/artist.jpg"],
   },
   robots: {
@@ -55,7 +55,7 @@ export default function RootLayout({
     "name": "DJ HPO",
     "url": "https://djhpo.vercel.app",
     "image": "https://djhpo.vercel.app/artist.jpg",
-    "description": "DJ HPO is a viral mashup artist creating high-energy mashups & DJ experiences with 70M+ views.",
+    "description": "DJ HPO is a viral mashup artist creating high-energy mashups & DJ experiences with 60M+ views.",
     "sameAs": [
       "https://instagram.com/mashbyhpo"
       // You can add Youtube, Soundcloud here if available

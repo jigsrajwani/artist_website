@@ -18,7 +18,7 @@ interface Reel {
 const baseReels: Reel[] = [
   { id: 'reel4', views: '22.9M', shortcode: 'DV6QdgTAQ60', title: 'Bebot x Mehbooba 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DV6QdgTAQ60/', thumbnail: '/thumbnails/reel-DV6QdgTAQ60.jpg' },
   { id: 'reel1', views: '19.8M', shortcode: 'DUdZJ62E55V', title: 'Chanel x Sheila ki Jawaani 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DUdZJ62E55V/', thumbnail: '/thumbnails/reel-DUdZJ62E55V.jpg' },
-  { id: 'reel2', views: '3.8M', shortcode: 'DUn3h0UAYpX', title: 'Pal Pal x Leke Pehla Pehla Pyaar 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DUn3h0UAYpX/', thumbnail: '/thumbnails/reel-DUn3h0UAYpX.jpg' },
+  { id: 'reel2', views: '3.8M', shortcode: 'DVyiuDfAQ4s', title: 'Tere Hoke Rahenge x Mere Rang Mein 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DVyiuDfAQ4s/', thumbnail: '/thumbnails/reel-DVyiuDfAQ4s.jpg' },
   { id: 'reel3', views: '4.5M', shortcode: 'DRr01m8AWnF', title: 'Gal Sun x Todha Resham 🔥', gradient: 'linear-gradient(160deg, #0e3254 0%, #1a0a4a 100%)', bars: [20, 35, 14, 40, 8, 28, 42, 18, 30], instagramUrl: 'https://www.instagram.com/reel/DRr01m8AWnF/', thumbnail: '/thumbnails/reel-DRr01m8AWnF.jpg' },
 ];
 
@@ -117,7 +117,7 @@ export default function ReelsSection() {
             <span style={{ background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Reels</span>
           </h2>
           <p style={{ color: 'rgba(156,163,175,1)', maxWidth: '36rem', margin: '0 auto 1.25rem' }}>
-            70M+ views across Instagram. Real music, real energy, real impact.
+            60M+ views across Instagram. Real music, real energy, real impact.
           </p>
           <a
             id="instagram-follow-btn"

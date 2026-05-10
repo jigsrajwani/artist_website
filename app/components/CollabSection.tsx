@@ -45,7 +45,9 @@ const collabTypes = [
 const brandLogos = [
   { name: 'OLA', colorA: '#00D4FF', colorB: '#2563eb' },
   { name: 'VIDA', colorA: '#a855f7', colorB: '#7c3aed' },
-  { name: 'GharSoaps', colorA: '#f472b6', colorB: '#be185d' },
+  { name: 'GharSoaps', colorA: '#f472b6', colorB: '#be185d'},
+  { name: 'BBlunt', colorA: '#F59E0B', colorB: '#EF4444'},
+  { name: 'BGauss',  colorA: '#3B82F6', colorB: '#8B5CF6'}
 ];
 
 export default function CollabSection() {

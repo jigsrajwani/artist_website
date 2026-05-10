@@ -1,17 +1,17 @@
 {
-  "instagramFollowers": 137,
+  "instagramFollowers": 155,
   "instagramFollowersSuffix": "k+",
-  "totalReelViews": 50,
+  "totalReelViews": 60,
   "totalReelViewsSuffix": "M+",
-  "lastUpdated": "2026-04-28T09:54:58.451978",
+  "lastUpdated": "2026-05-10T21:05:38.093305",
   "reels": {
-    "DV6QdgTAQ60": "27.1M",
-    "DUdZJ62E55V": "21.3M",
-    "DUn3h0UAYpX": "4.1M",
-    "DRr01m8AWnF": "4.6M"
+    "DV6QdgTAQ60": "28M",
+    "DUdZJ62E55V": "21.8M", 
+    "DVyiuDfAQ4s": "6.9M",
+    "DRr01m8AWnF": "4.6M" 
   },
-  "youtubeSubscribers": 142.0,
-  "youtubeSubscribersSuffix": "K+", 
+  "youtubeSubscribers": 160.0,
+  "youtubeSubscribersSuffix": "K+",
   "eventsPerformed": 100,
   "eventsPerformedSuffix": "+",
   "mashupPacksReleased": 5,
