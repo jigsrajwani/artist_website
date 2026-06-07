@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "DJ HPO – Viral Mashup Artist | Book Now",
   description: "DJ HPO is a viral mashup artist creating high-energy mashups & DJ experiences. 60M+ views. Book for events, download mashup packs, brand collaborations. @mashbyhpo",
   keywords: ["DJ HPO", "mashup artist", "viral mashups", "DJ booking", "Bollywood mashup", "DJ India", "@mashbyhpo"],
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: "/favicon.png",
+    shortcut: "/favicon.png",
+  },
   alternates: {
     canonical: "/",
   },
@@ -65,6 +72,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
