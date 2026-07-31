@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const navLinks = [
   { href: '#reels', label: 'Reels' },
@@ -62,6 +63,21 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <Link
+            id="nav-events-btn"
+            href="/book"
+            style={{
+              padding: '0.5rem 1.25rem', borderRadius: '9999px',
+              background: 'rgba(0,212,255,0.08)',
+              border: '1px solid rgba(0,212,255,0.3)',
+              color: '#00D4FF', fontWeight: 700, fontSize: '0.875rem',
+              textDecoration: 'none', transition: 'background 0.2s',
+            }}
+            onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(0,212,255,0.18)'}
+            onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(0,212,255,0.08)'}
+          >
+            Book Events
+          </Link>
           <a
             id="nav-book-btn"
             href="#contact"
