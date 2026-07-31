@@ -8,6 +8,7 @@ import CollabSection from './components/CollabSection';
 import LinkHubSection from './components/LinkHubSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -93,9 +94,9 @@ export default function Home() {
           </svg>
           Download
         </a>
-        <a
+        <Link
           id="sticky-book-cta"
-          href="#contact"
+          href="/book"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -117,8 +118,8 @@ export default function Home() {
           <svg style={{ width: '14px', height: '14px' }} fill="currentColor" viewBox="0 0 24 24">
             <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" />
           </svg>
-          Book Now
-        </a>
+          Book Events
+        </Link>
       </div>
     </main>
   );

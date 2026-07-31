@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -173,12 +174,12 @@ export default function HeroSection() {
               {/* <svg style={{ width: '15px', height: '15px', fill: 'currentColor', flexShrink: 0 }} viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" /></svg> */}
               Download Mashups
             </a>
-            <a id="hero-book-now" href="#contact"
+            <Link id="hero-book-now" href="/book"
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.8rem 1.5rem', borderRadius: '9999px', background: 'transparent', border: '2px solid rgba(255,255,255,0.15)', color: 'rgba(209,213,219,1)', fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', transition: 'border-color 0.2s, transform 0.2s' }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.4)'; (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-2px)'; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.15)'; (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)'; }}>
-              Book Now
-            </a>
+              Book Events
+            </Link>
           </div>
         </div>
 
