@@ -44,6 +44,33 @@ type FormData = {
 const weddingReels = [
   {
     id: 'wreel1',
+    shortcode: 'DVqc8x9D8Rt',
+    title: 'Holitina 3.0 Jaipur 🔥',
+    instagramUrl: 'https://www.instagram.com/p/DVqc8x9D8Rt/',
+    gradient: 'linear-gradient(160deg, #33051a 0%, #1a0a3a 100%)',
+    accentColor: '#ec4899',
+    thumbnail: '/thumbnails/reel-DVqc8x9D8Rt.jpg',
+  },
+  {
+    id: 'wreel2',
+    shortcode: 'DbBU90inXH4_1',
+    title: 'Destination Wedding (BTS & Fun) 🎬',
+    instagramUrl: 'https://www.instagram.com/p/DbBU90inXH4/?img_index=1',
+    gradient: 'linear-gradient(160deg, #053326 0%, #0a2a3a 100%)',
+    accentColor: '#10b981',
+    thumbnail: '/thumbnails/reel-DbBU90inXH4_1.jpg',
+  },
+  {
+    id: 'wreel3',
+    shortcode: 'DbBU90inXH4_3',
+    title: 'Destination Wedding Dance Floor 💃',
+    instagramUrl: 'https://www.instagram.com/p/DbBU90inXH4/?img_index=3',
+    gradient: 'linear-gradient(160deg, #331a05 0%, #3a0a1a 100%)',
+    accentColor: '#f97316',
+    thumbnail: '/thumbnails/reel-DbBU90inXH4_3.jpg',
+  },
+  {
+    id: 'wreel4',
     shortcode: 'DZ8d_nXT_eO',
     title: 'Wedding Vibes 🎊',
     instagramUrl: 'https://www.instagram.com/reel/DZ8d_nXT_eO',
@@ -52,7 +79,7 @@ const weddingReels = [
     thumbnail: '/thumbnails/reel-DZ8d_nXT_eO.jpg',
   },
   {
-    id: 'wreel2',
+    id: 'wreel5',
     shortcode: 'DTapp5uDwB8',
     title: 'Event Night 🔥',
     instagramUrl: 'https://www.instagram.com/reel/DTapp5uDwB8',
@@ -61,7 +88,7 @@ const weddingReels = [
     thumbnail: '/thumbnails/reel-DTapp5uDwB8.jpg',
   },
   {
-    id: 'wreel3',
+    id: 'wreel6',
     shortcode: 'DVeFl68AVqo',
     title: 'Dance Floor Energy ⚡',
     instagramUrl: 'https://www.instagram.com/reel/DVeFl68AVqo',
@@ -70,7 +97,7 @@ const weddingReels = [
     thumbnail: '/thumbnails/reel-DVeFl68AVqo.jpg',
   },
   {
-    id: 'wreel4',
+    id: 'wreel7',
     shortcode: 'DU0wBjOAQrz',
     title: 'Bollywood Mashup Night 🎵',
     instagramUrl: 'https://www.instagram.com/reel/DU0wBjOAQrz',
@@ -176,8 +203,8 @@ const services = [
   {
     icon: '🎓',
     title: 'College Fests',
-    desc: 'From Freshers to Farewell — get the crowd going with curated mashups that hit every mood.',
-    tags: ['Freshers', 'Farewell', 'Annual Fest', 'Cultural Night'],
+    desc: 'Performed at top campuses like IIT Jodhpur, Manipal, Poornima, Amity & JKLU — turning college fests into massive concerts.',
+    tags: ['IIT Jodhpur', 'Manipal Uni', 'Poornima Uni', 'Amity', 'JKLU', 'IIS Uni'],
     color: '#34d399',
   },
 ];
@@ -185,20 +212,26 @@ const services = [
 const testimonials = [
   {
     name: 'Priya & Rahul',
-    event: 'Wedding Reception · Jaipur',
-    text: 'DJ HPO absolutely nailed our wedding! Every song transition was perfect. The dance floor was never empty — even our parents were dancing at midnight!',
+    event: 'Destination Wedding · Pushkar',
+    text: 'DJ HPO turned our Pushkar destination wedding into an absolute festival! His signature mashups kept the energy high across all age groups.',
     rating: 5,
   },
   {
-    name: 'Arjun Sharma',
-    event: 'Corporate Party · Pink City Mall, Jaipur',
-    text: 'Hired HPO for our company\'s annual party. The energy he brought was incredible. Everyone is still talking about it weeks later. Highly recommend!',
+    name: 'Vikram & Ananya',
+    event: 'Wedding Reception · Hyderabad',
+    text: 'HPO travelled for our wedding in Hyderabad and killed it. Flawless transitions between Bollywood hits and EDM tracks. The dance floor was packed all night!',
     rating: 5,
   },
   {
-    name: 'Sneha Agarwal',
-    event: 'Birthday Party · Jaipur',
-    text: 'Best decision we made for my 25th birthday. DJ HPO played the perfect mix of Bollywood hits and EDM. Total vibe all night long.',
+    name: 'Student Council',
+    event: 'Cultural Fest · Manipal University Jaipur',
+    text: 'HPO brought unmatched energy to our campus fest. Over 3,000 students singing and dancing to his live mashup set!',
+    rating: 5,
+  },
+  {
+    name: 'Fest Committee',
+    event: 'Annual Fest Night · IIT Jodhpur',
+    text: 'One of the best DJ nights on campus! HPO reads the crowd like a pro and drops non-stop high-energy mashups.',
     rating: 5,
   },
 ];
@@ -215,6 +248,10 @@ const faqs = [
   {
     q: 'Can I share a song list / preferences?',
     a: 'Absolutely! We love working with a custom playlist. Share your must-plays, must-avoids, and genre preferences — DJ HPO will build a set around your taste.',
+  },
+  {
+    q: 'What is the complimentary content add-on?',
+    a: 'Every booking includes a complimentary cinematic group reel in signature HPO style for Instagram, plus a behind-the-scenes event vlog for YouTube — giving you high-quality video memories of your event! If you prefer a private event without social media coverage, simply let us know — your privacy is always 100% respected.',
   },
   {
     q: 'What\'s the pricing like?',
@@ -357,45 +394,41 @@ export default function BookPage() {
               padding: '0.4rem 1rem', borderRadius: '9999px',
               border: '1px solid rgba(0,212,255,0.3)', background: 'rgba(0,212,255,0.05)',
               marginBottom: '1.5rem',
-              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(12px)',
-              transition: 'opacity 0.7s, transform 0.7s',
+              animation: 'fadeInUp 0.7s ease forwards',
             }}
           >
             <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#4ade80', boxShadow: '0 0 6px #4ade80', animation: 'pulse 2s infinite' }} />
-            <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#00D4FF', letterSpacing: '0.05em' }}>Available for Bookings · Jaipur, Rajasthan</span>
+            <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#00D4FF', letterSpacing: '0.05em' }}>Available Pan-India &amp; Destination Events</span>
           </div>
 
           <h1
             style={{
-              fontWeight: 900, fontSize: 'clamp(2.5rem, 7vw, 5rem)', lineHeight: 1.05, marginBottom: '1.25rem',
-              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(16px)',
-              transition: 'opacity 0.7s 0.1s, transform 0.7s 0.1s',
+              fontWeight: 900, fontSize: 'clamp(2.5rem, 7vw, 4.8rem)', lineHeight: 1.05, marginBottom: '1.25rem',
+              animation: 'fadeInUp 0.7s 0.1s ease forwards',
             }}
           >
-            Jaipur&apos;s{' '}
+            High-Energy{' '}
             <span style={{ background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              #1 Wedding
+              Wedding &amp; Event
             </span>
-            {' '}&amp; Event DJ
+            {' '}DJ
           </h1>
 
           <p
             style={{
               fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(209,213,219,1)', maxWidth: '42rem',
               lineHeight: 1.7, marginBottom: '2rem',
-              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(16px)',
-              transition: 'opacity 0.7s 0.2s, transform 0.7s 0.2s',
+              animation: 'fadeInUp 0.7s 0.2s ease forwards',
             }}
           >
-            DJ HPO brings 5+ years of professional DJ experience and 60M+ viral views to your wedding, party, or corporate event in Jaipur &amp; across Rajasthan. High-energy Bollywood, EDM &amp; mashup sets — customized for your event.
+            DJ HPO brings 5+ years of professional DJ experience and 60M+ viral views to your wedding, party, or corporate event in Jaipur, Rajasthan, and all across India. High-energy Bollywood, EDM &amp; mashup sets — customized for your event.
           </p>
 
           {/* CTA buttons */}
           <div
             style={{
               display: 'flex', flexWrap: 'wrap', gap: '1rem',
-              opacity: mounted ? 1 : 0, transform: mounted ? 'none' : 'translateY(16px)',
-              transition: 'opacity 0.7s 0.3s, transform 0.7s 0.3s',
+              animation: 'fadeInUp 0.7s 0.3s ease forwards',
             }}
           >
             <a
@@ -418,13 +451,13 @@ export default function BookPage() {
           <div
             style={{
               display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '2.5rem',
-              opacity: mounted ? 1 : 0, transition: 'opacity 0.7s 0.5s',
+              animation: 'fadeInUp 0.7s 0.5s ease forwards',
             }}
           >
             {[
               { icon: '🎵', text: '100+ Events Performed' },
               { icon: '⭐', text: '5-Star Rated DJ' },
-              { icon: '📍', text: 'Based in Jaipur' },
+              { icon: '📍', text: 'Performs Pan-India' },
               { icon: '🎬', text: '60M+ Social Media Views' },
             ].map((b) => (
               <div key={b.text} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.9rem', borderRadius: '9999px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', fontSize: '0.8rem', color: 'rgba(209,213,219,1)' }}>
@@ -484,6 +517,26 @@ export default function BookPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Complimentary Media Perk Banner */}
+          <div style={{ marginTop: '2.5rem', background: 'linear-gradient(135deg, rgba(139,92,246,0.12) 0%, rgba(0,212,255,0.08) 100%)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '1.25rem', padding: '1.75rem 2rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem' }}>
+            <div style={{ flex: '1 1 300px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', padding: '0.25rem 0.75rem', borderRadius: '9999px', background: 'rgba(139,92,246,0.2)', border: '1px solid rgba(139,92,246,0.4)', color: '#c084fc', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>
+                🎁 Complimentary Bonus Included
+              </div>
+              <h3 style={{ fontWeight: 800, fontSize: '1.25rem', color: 'white', marginBottom: '0.5rem' }}>Signature Content Experience with Every Booking</h3>
+              <p style={{ color: 'rgba(209,213,219,0.9)', fontSize: '0.9rem', lineHeight: 1.7, margin: 0 }}>
+                Every event receives a complimentary <strong>cinematic group reel</strong> in HPO’s signature style for Instagram, plus an exclusive <strong>behind-the-scenes event vlog</strong> for YouTube — giving you professional video memories to keep forever.
+              </p>
+              <p style={{ color: 'rgba(156,163,175,0.8)', fontSize: '0.75rem', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                *100% Optional — Privacy preferences are always confirmed beforehand.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <span style={{ fontSize: '0.75rem', padding: '0.35rem 0.85rem', borderRadius: '9999px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', color: '#f472b6', fontWeight: 600 }}>📹 Cinematic Group Reel</span>
+              <span style={{ fontSize: '0.75rem', padding: '0.35rem 0.85rem', borderRadius: '9999px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', color: '#00D4FF', fontWeight: 600 }}>📺 YouTube BTS Vlog</span>
+            </div>
           </div>
         </div>
       </section>
@@ -672,13 +725,13 @@ export default function BookPage() {
                   <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#4ade80', boxShadow: '0 0 6px #4ade80', animation: 'pulse 2s infinite' }} />
                   <span style={{ color: '#4ade80', fontSize: '0.875rem', fontWeight: 600 }}>Available for Bookings</span>
                 </div>
-                <p style={{ color: 'rgba(107,114,128,1)', fontSize: '0.75rem' }}>Response within 24 hours · Jaipur & all of Rajasthan</p>
+                <p style={{ color: 'rgba(107,114,128,1)', fontSize: '0.75rem' }}>Response within 24 hours · Available across India &amp; Destinations</p>
               </div>
 
               <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '1.25rem', padding: '1.25rem 1.5rem' }}>
                 <p style={{ color: 'rgba(107,114,128,1)', fontSize: '0.78rem', lineHeight: 1.7 }}>
-                  📍 <strong style={{ color: 'rgba(156,163,175,1)' }}>Based in Jaipur, Rajasthan</strong><br />
-                  Serving: Jaipur · Jodhpur · Udaipur · Kota · Ajmer · Bikaner & across Rajasthan
+                  📍 <strong style={{ color: 'rgba(156,163,175,1)' }}>Based in Jaipur · Performing Pan-India</strong><br />
+                  Serving: Jaipur · Delhi NCR · Mumbai · Udaipur · Goa · Bengaluru &amp; All of India
                 </p>
               </div>
             </div>
@@ -855,6 +908,7 @@ export default function BookPage() {
 
       <style>{`
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
         @media (max-width: 600px) {
           .form-row { grid-template-columns: 1fr !important; }
         }
