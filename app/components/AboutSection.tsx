@@ -16,6 +16,8 @@ const achievements = [
 // const tags = ['Bollywood Mashups', 'EDM', 'Club DJ', 'Viral Reels', 'Wedding DJ', 'Brand Collab'];
 
 const stageHighlights = [
+  { label: 'Major IITs & AIIMS', emoji: '🎓', color: 'rgba(52,211,153,0.12)', border: 'rgba(52,211,153,0.35)' },
+  { label: "St. Xavier's", emoji: '🏛️', color: 'rgba(244,114,182,0.12)', border: 'rgba(244,114,182,0.35)' },
   { label: 'Nucleya', emoji: '🎛️', color: 'rgba(0,212,255,0.12)', border: 'rgba(0,212,255,0.3)' },
   { label: 'Jassie Gill', emoji: '🎤', color: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.4)' },
   { label: 'Parmish Verma', emoji: '🔥', color: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.35)' },

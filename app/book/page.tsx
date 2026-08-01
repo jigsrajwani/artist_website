@@ -182,30 +182,23 @@ const services = [
   {
     icon: '💍',
     title: 'Wedding DJ',
-    desc: 'From the saat phere to the dance floor — Bollywood, EDM, and everything in between. DJ HPO makes your wedding night unforgettable.',
-    tags: ['Sangeet', 'Baraat', 'Reception', 'After-party'],
+    desc: 'From high-energy Baraat on Wheels to Sangeet & After-Parties — Bollywood, EDM, and custom mashups that keep the dance floor packed.',
+    tags: ['Baraat on Wheels', 'Sangeet Night', 'Reception', 'After-Party'],
     color: '#f472b6',
-  },
-  {
-    icon: '🎉',
-    title: 'Private Parties',
-    desc: 'Birthdays, anniversaries, rooftop parties — high-energy sets customized to your vibe and guest list.',
-    tags: ['Birthday Bash', 'Anniversary', 'House Party', 'Rooftop'],
-    color: '#00D4FF',
-  },
-  {
-    icon: '🏢',
-    title: 'Corporate Events',
-    desc: 'Office parties, product launches, and brand events in Jaipur. Professional setup, premium sound, guaranteed crowd energy.',
-    tags: ['Office Party', 'Product Launch', 'Award Night', 'Team Party'],
-    color: '#8B5CF6',
   },
   {
     icon: '🎓',
     title: 'College Fests',
-    desc: 'Performed at top campuses like IIT Jodhpur, Manipal, Poornima, Amity & JKLU — turning college fests into massive concerts.',
-    tags: ['IIT Jodhpur', 'Manipal Uni', 'Poornima Uni', 'Amity', 'JKLU', 'IIS Uni'],
+    desc: 'Performed at 50+ campuses across India including Major IITs, AIIMS, St. Xavier\'s & Manipal — turning college fests into massive concerts.',
+    tags: ['Major IITs', 'AIIMS', 'St. Xavier\'s', 'Manipal', 'Poornima', '50+ Campuses'],
     color: '#34d399',
+  },
+  {
+    icon: '🏢',
+    title: 'Corporate Events',
+    desc: 'Office parties, product launches, and brand events across India. Professional setup, premium sound, guaranteed crowd energy.',
+    tags: ['Office Party', 'Product Launch', 'Award Night', 'Team Party'],
+    color: '#8B5CF6',
   },
 ];
 
@@ -224,14 +217,14 @@ const testimonials = [
   },
   {
     name: 'Student Council',
-    event: 'Cultural Fest · Manipal University Jaipur',
+    event: 'Cultural Fest · Manipal & St. Xavier\'s College',
     text: 'HPO brought unmatched energy to our campus fest. Over 3,000 students singing and dancing to his live mashup set!',
     rating: 5,
   },
   {
     name: 'Fest Committee',
-    event: 'Annual Fest Night · IIT Jodhpur',
-    text: 'One of the best DJ nights on campus! HPO reads the crowd like a pro and drops non-stop high-energy mashups.',
+    event: 'Annual Fest Night · Major IITs & AIIMS',
+    text: 'One of the best DJ nights on campus! HPO has performed at 50+ top campuses across India, reading the crowd like a pro and dropping non-stop high-energy mashups.',
     rating: 5,
   },
 ];
@@ -788,12 +781,11 @@ export default function BookPage() {
                       <label style={labelStyle}>Event Type *</label>
                       <select id="book-event-type" name="eventType" value={formData.eventType} onChange={handleChange} style={{ ...inputStyle, cursor: 'pointer' }}>
                         <option value="Wedding">💍 Wedding</option>
+                        <option value="Baraat on Wheels">🚚 Baraat on Wheels</option>
                         <option value="Sangeet">🎶 Sangeet Night</option>
                         <option value="Reception">🥂 Reception Party</option>
-                        <option value="Birthday">🎂 Birthday Party</option>
-                        <option value="Corporate">🏢 Corporate Event</option>
                         <option value="College Fest">🎓 College Fest</option>
-                        <option value="Private Party">🎉 Private Party</option>
+                        <option value="Corporate">🏢 Corporate Event</option>
                         <option value="Other">✨ Other</option>
                       </select>
                     </div>
