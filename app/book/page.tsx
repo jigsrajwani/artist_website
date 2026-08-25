@@ -431,7 +431,7 @@ export default function BookPage() {
               📅 Check Availability & Book
             </a>
             <a
-              href="https://wa.me/918005926751?text=Hi%20DJ%20HPO!%20I%27d%20like%20to%20book%20you%20for%20an%20event."
+              href="https://wa.me/918852061175?text=Hi%20DJ%20HPO!%20I%27d%20like%20to%20book%20you%20for%20an%20event."
               target="_blank"
               rel="noopener noreferrer"
               style={{ padding: '0.9rem 2rem', borderRadius: '9999px', background: 'rgba(74,222,128,0.1)', border: '2px solid rgba(74,222,128,0.4)', color: '#4ade80', fontWeight: 700, fontSize: '1rem', textDecoration: 'none' }}
@@ -695,7 +695,7 @@ export default function BookPage() {
                 <h3 style={{ color: 'white', fontWeight: 700, fontSize: '1rem', marginBottom: '1.25rem' }}>Contact Directly</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   {[
-                    { icon: '📱', label: 'WhatsApp', value: 'Message on WhatsApp', href: 'https://wa.me/918005926751?text=Hi%20DJ%20HPO!%20I%27d%20like%20to%20book%20you%20for%20an%20event.' },
+                    { icon: '📱', label: 'WhatsApp', value: 'Message on WhatsApp', href: 'https://wa.me/918852061175?text=Hi%20DJ%20HPO!%20I%27d%20like%20to%20book%20you%20for%20an%20event.' },
                     { icon: '📧', label: 'Email', value: 'hpomusicofficial@gmail.com', href: 'mailto:hpomusicofficial@gmail.com' },
                     { icon: '📸', label: 'Instagram', value: '@mashbyhpo', href: 'https://instagram.com/mashbyhpo' },
                   ].map((c) => (
@@ -737,7 +737,7 @@ export default function BookPage() {
                   <h3 style={{ color: 'white', fontWeight: 700, fontSize: '1.5rem', marginBottom: '0.5rem' }}>Booking Request Sent!</h3>
                   <p style={{ color: 'rgba(156,163,175,1)', marginBottom: '1.5rem' }}>DJ HPO will get back to you within 24 hours with availability & a custom quote.</p>
                   <a
-                    href="https://wa.me/918005926751?text=Hi%20DJ%20HPO!%20I%20just%20submitted%20a%20booking%20inquiry."
+                    href="https://wa.me/918852061175?text=Hi%20DJ%20HPO!%20I%20just%20submitted%20a%20booking%20inquiry."
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ display: 'inline-block', padding: '0.75rem 2rem', borderRadius: '9999px', background: 'rgba(74,222,128,0.15)', border: '2px solid rgba(74,222,128,0.4)', color: '#4ade80', fontWeight: 700, textDecoration: 'none', fontSize: '0.9rem' }}
@@ -892,7 +892,7 @@ export default function BookPage() {
           <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
             <Link href="/" style={{ color: 'rgba(156,163,175,1)', fontSize: '0.8rem', textDecoration: 'none' }}>Portfolio</Link>
             <a href="https://instagram.com/mashbyhpo" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(156,163,175,1)', fontSize: '0.8rem', textDecoration: 'none' }}>Instagram</a>
-            <a href="https://wa.me/918005926751" target="_blank" rel="noopener noreferrer" style={{ color: '#4ade80', fontSize: '0.8rem', textDecoration: 'none', fontWeight: 600 }}>WhatsApp</a>
+            <a href="https://wa.me/918852061175" target="_blank" rel="noopener noreferrer" style={{ color: '#4ade80', fontSize: '0.8rem', textDecoration: 'none', fontWeight: 600 }}>WhatsApp</a>
           </div>
           <p style={{ color: 'rgba(75,85,99,1)', fontSize: '0.75rem' }}>© 2025 DJ HPO. All rights reserved.</p>
         </div>

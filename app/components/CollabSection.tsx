@@ -241,7 +241,7 @@ export default function CollabSection() {
               {/* WhatsApp button */}
               <a
                 id="collab-whatsapp-btn"
-                href="https://wa.me/918005926751?text=Hi%20DJ%20HPO!%20I%20want%20to%20collaborate%20with%20you."
+                href="https://wa.me/918852061175?text=Hi%20DJ%20HPO!%20I%20want%20to%20collaborate%20with%20you."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

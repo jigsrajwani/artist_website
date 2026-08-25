@@ -43,7 +43,7 @@ const contactLinks = [
   },
   {
     id: 'contact-whatsapp-btn',
-    href: 'https://wa.me/918005926751?text=Hi%20DJ%20HPO!%20I%27d%20like%20to%20book%20you.',
+    href: 'https://wa.me/918852061175?text=Hi%20DJ%20HPO!%20I%27d%20like%20to%20book%20you.',
     label: 'WhatsApp',
     value: 'Message on WhatsApp',
     iconColor: '#4ade80',

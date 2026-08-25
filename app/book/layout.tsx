@@ -72,7 +72,7 @@ export default function BookLayout({ children }: { children: React.ReactNode }) 
         'image': 'https://djhpo.vercel.app/artist.jpg',
         'description': 'Professional Wedding DJ and Event DJ based in Jaipur, Rajasthan. Specializing in Bollywood, EDM and mashup sets for weddings, corporate events, parties and college fests.',
         'priceRange': '₹₹',
-        'telephone': '+918005926751',
+        'telephone': '+918852061175',
         'email': 'hpomusicofficial@gmail.com',
         'address': {
           '@type': 'PostalAddress',

@@ -99,7 +99,7 @@ export default function RootLayout({
         "url": "https://djhpo.vercel.app/book",
         "image": "https://djhpo.vercel.app/artist.jpg",
         "description": "Professional Wedding DJ and Event DJ in Jaipur, Rajasthan.",
-        "telephone": "+918005926751",
+        "telephone": "+918852061175",
         "priceRange": "₹₹",
         "address": {
           "@type": "PostalAddress",
