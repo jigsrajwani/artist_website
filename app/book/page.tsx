@@ -457,23 +457,6 @@ export default function BookPage() {
             </a>
           </div>
 
-          {/* Wedding season urgency banner */}
-          <div
-            style={{
-              display: 'flex', alignItems: 'center', gap: '0.75rem',
-              padding: '0.75rem 1.25rem', borderRadius: '0.875rem',
-              background: 'linear-gradient(135deg, rgba(244,114,182,0.1), rgba(139,92,246,0.08))',
-              border: '1px solid rgba(244,114,182,0.3)',
-              maxWidth: '44rem', marginBottom: '0.5rem',
-              animation: 'fadeInUp 0.7s 0.35s ease forwards',
-            }}
-          >
-            <span style={{ fontSize: '1.1rem' }}>🗓️</span>
-            <p style={{ fontSize: '0.85rem', color: 'rgba(209,213,219,1)', margin: 0, lineHeight: 1.5 }}>
-              <strong style={{ color: '#f472b6' }}>Wedding Season 2025–26 is here!</strong> Peak dates (Oct–Feb) fill up fast.
-              {' '}<a href="#book-form" style={{ color: '#00D4FF', fontWeight: 700, textDecoration: 'none' }}>Check availability →</a>
-            </p>
-          </div>
 
           {/* Trust badges */}
           <div

@@ -49,7 +49,7 @@ const brandLogos = [
   { name: 'BGauss',    colorA: '#3B82F6', colorB: '#8B5CF6' },
   { name: 'BBlunt',    colorA: '#F59E0B', colorB: '#EF4444' },
   { name: 'VIDA',      colorA: '#a855f7', colorB: '#7c3aed' },
-  { name: 'Zubronics', colorA: '#00D4FF', colorB: '#0ea5e9' },
+  { name: 'Zebronics', colorA: '#00D4FF', colorB: '#0ea5e9' },
   { name: 'Suno AI',   colorA: '#f97316', colorB: '#dc2626' },
   { name: 'Perfora',   colorA: '#ec4899', colorB: '#a855f7' },
   { name: 'Bingo!',    colorA: '#fbbf24', colorB: '#f97316' },
