@@ -181,9 +181,9 @@ function WeddingReelCard({ reel }: { reel: typeof weddingReels[0] }) {
 const services = [
   {
     icon: '💍',
-    title: 'Wedding DJ',
-    desc: 'From high-energy Baraat on Wheels to Sangeet & After-Parties — Bollywood, EDM, and custom mashups that keep the dance floor packed.',
-    tags: ['Baraat on Wheels', 'Sangeet Night', 'Reception', 'After-Party'],
+    title: 'Wedding DJ – Sangeet, Baraat & Reception',
+    desc: 'Best wedding DJ in Jaipur for every ceremony — high-energy Baraat on Wheels, Sangeet Night, Reception & Mehndi. Bollywood, EDM & custom mashups that keep every age group on the dance floor all night.',
+    tags: ['Baraat on Wheels', 'Sangeet Night', 'Reception', 'Mehndi Night', 'After-Party', 'Destination Wedding'],
     color: '#f472b6',
   },
   {
@@ -231,16 +231,24 @@ const testimonials = [
 
 const faqs = [
   {
-    q: 'Do you travel outside Jaipur for events?',
-    a: 'Yes! DJ HPO performs across Rajasthan — Jaipur, Jodhpur, Udaipur, Kota, Ajmer, and more. For outstation events, travel arrangements are discussed during booking.',
+    q: 'How much does a wedding DJ cost in Jaipur?',
+    a: 'Wedding DJ pricing in Jaipur depends on the event type (Sangeet, Baraat, Reception), duration, location, and equipment required. DJ HPO offers competitive, transparent packages tailored for every budget. Fill out the inquiry form and receive a custom quote within 24 hours — no hidden costs.',
   },
   {
-    q: 'How far in advance should I book?',
-    a: 'For weddings and large events, we recommend booking at least 4–6 weeks in advance. For smaller parties, 1–2 weeks is usually fine. Peak wedding season (Oct–Feb) fills up fast.',
+    q: 'Do you travel outside Jaipur for destination weddings?',
+    a: 'Yes! DJ HPO performs across Rajasthan — Jaipur, Jodhpur, Udaipur, Pushkar, Kota, Ajmer — and across India for destination weddings in Delhi, Mumbai, Goa, Hyderabad, Bengaluru & beyond. Travel & accommodation arrangements are discussed during booking.',
   },
   {
-    q: 'Can I share a song list / preferences?',
-    a: 'Absolutely! We love working with a custom playlist. Share your must-plays, must-avoids, and genre preferences — DJ HPO will build a set around your taste.',
+    q: 'How far in advance should I book a wedding DJ?',
+    a: 'Wedding season (October–February) books up extremely fast. We strongly recommend booking DJ HPO at least 4–6 weeks in advance for weddings. For smaller events, 1–2 weeks is usually fine. Don\'t wait — check availability today!',
+  },
+  {
+    q: 'Can I share my wedding song list and preferences?',
+    a: 'Absolutely! DJ HPO loves working with a personal playlist. Share your must-play songs, must-avoids, genre preferences (Bollywood, Punjabi, EDM, retro), and even specific moments like first dance or baraat entry songs — every set is built specifically for your wedding.',
+  },
+  {
+    q: 'What wedding ceremonies does DJ HPO perform at?',
+    a: 'DJ HPO covers every wedding ceremony: Mehndi Night, Sangeet Night, Baraat (including Baraat on Wheels), Wedding Reception, and After-Party. Each set is customized for the energy and tone of that specific function.',
   },
   {
     q: 'What is the complimentary content add-on?',
@@ -400,21 +408,30 @@ export default function BookPage() {
               animation: 'fadeInUp 0.7s 0.1s ease forwards',
             }}
           >
-            High-Energy{' '}
+            Best{' '}
             <span style={{ background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              Wedding &amp; Event
+              Wedding DJ
             </span>
-            {' '}DJ
+            {' '}in India
           </h1>
 
           <p
             style={{
-              fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(209,213,219,1)', maxWidth: '42rem',
-              lineHeight: 1.7, marginBottom: '2rem',
+              fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(209,213,219,1)', maxWidth: '44rem',
+              lineHeight: 1.7, marginBottom: '1.25rem',
               animation: 'fadeInUp 0.7s 0.2s ease forwards',
             }}
           >
-            DJ HPO brings 5+ years of professional DJ experience and 60M+ viral views to your wedding, party, or corporate event in Jaipur, Rajasthan, and all across India. High-energy Bollywood, EDM &amp; mashup sets — customized for your event.
+            DJ HPO is India&apos;s top-rated wedding DJ — based in Jaipur, performing across India. Specializing in <strong style={{ color: 'white' }}>Sangeet Night, Baraat on Wheels, Mehndi &amp; Reception</strong>. 5+ years of experience, 100+ weddings, and 150M+ viral views. High-energy Bollywood, Punjabi &amp; EDM mashup sets — fully customized for your big day.
+          </p>
+          <p
+            style={{
+              fontSize: '0.95rem', color: 'rgba(156,163,175,1)', maxWidth: '44rem',
+              lineHeight: 1.7, marginBottom: '2rem',
+              animation: 'fadeInUp 0.7s 0.25s ease forwards',
+            }}
+          >
+            Available for weddings in <strong style={{ color: 'rgba(209,213,219,1)' }}>Jaipur · Udaipur · Jodhpur · Delhi · Mumbai · Goa</strong> and all destination weddings across India.
           </p>
 
           {/* CTA buttons */}
@@ -440,18 +457,36 @@ export default function BookPage() {
             </a>
           </div>
 
+          {/* Wedding season urgency banner */}
+          <div
+            style={{
+              display: 'flex', alignItems: 'center', gap: '0.75rem',
+              padding: '0.75rem 1.25rem', borderRadius: '0.875rem',
+              background: 'linear-gradient(135deg, rgba(244,114,182,0.1), rgba(139,92,246,0.08))',
+              border: '1px solid rgba(244,114,182,0.3)',
+              maxWidth: '44rem', marginBottom: '0.5rem',
+              animation: 'fadeInUp 0.7s 0.35s ease forwards',
+            }}
+          >
+            <span style={{ fontSize: '1.1rem' }}>🗓️</span>
+            <p style={{ fontSize: '0.85rem', color: 'rgba(209,213,219,1)', margin: 0, lineHeight: 1.5 }}>
+              <strong style={{ color: '#f472b6' }}>Wedding Season 2025–26 is here!</strong> Peak dates (Oct–Feb) fill up fast.
+              {' '}<a href="#book-form" style={{ color: '#00D4FF', fontWeight: 700, textDecoration: 'none' }}>Check availability →</a>
+            </p>
+          </div>
+
           {/* Trust badges */}
           <div
             style={{
-              display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '2.5rem',
+              display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '1.5rem',
               animation: 'fadeInUp 0.7s 0.5s ease forwards',
             }}
           >
             {[
-              { icon: '🎵', text: '100+ Events Performed' },
-              { icon: '⭐', text: '5-Star Rated DJ' },
-              { icon: '📍', text: 'Performs Pan-India' },
-              { icon: '🎬', text: '60M+ Social Media Views' },
+              { icon: '💍', text: '100+ Weddings Performed' },
+              { icon: '⭐', text: '5-Star Rated Wedding DJ' },
+              { icon: '📍', text: 'Jaipur & Pan-India' },
+              { icon: '🎬', text: '150M+ Social Media Views' },
             ].map((b) => (
               <div key={b.text} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.9rem', borderRadius: '9999px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', fontSize: '0.8rem', color: 'rgba(209,213,219,1)' }}>
                 <span>{b.icon}</span>
@@ -548,7 +583,7 @@ export default function BookPage() {
                 </span>
               </h2>
               <p style={{ color: 'rgba(156,163,175,1)', lineHeight: 1.8, marginBottom: '2rem', fontSize: '0.95rem' }}>
-                DJ HPO isn&apos;t just a DJ — he&apos;s a viral content creator with 60M+ views who understands what music moves people. Every set is crafted specifically for your event, your guests, and your vibe.
+                DJ HPO isn&apos;t just a DJ — he&apos;s a viral content creator with 150M+ views who understands what music moves people. Every set is crafted specifically for your event, your guests, and your vibe.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
@@ -597,7 +632,7 @@ export default function BookPage() {
                 <div style={{ fontSize: '0.6rem', color: 'rgba(107,114,128,1)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Events</div>
               </div>
               <div style={{ position: 'absolute', bottom: '4rem', left: '-1rem', padding: '0.75rem 1rem', background: 'rgba(3,7,18,0.9)', backdropFilter: 'blur(12px)', borderRadius: '0.875rem', border: '1px solid rgba(0,212,255,0.3)', textAlign: 'center' }}>
-                <div style={{ fontWeight: 900, fontSize: '1.4rem', background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>60M+</div>
+                <div style={{ fontWeight: 900, fontSize: '1.4rem', background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>150M+</div>
                 <div style={{ fontSize: '0.6rem', color: 'rgba(107,114,128,1)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Views</div>
               </div>
             </div>

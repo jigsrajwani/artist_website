@@ -43,11 +43,17 @@ const collabTypes = [
 ];
 
 const brandLogos = [
-  { name: 'OLA', colorA: '#00D4FF', colorB: '#2563eb' },
-  { name: 'VIDA', colorA: '#a855f7', colorB: '#7c3aed' },
-  { name: 'GharSoaps', colorA: '#f472b6', colorB: '#be185d'},
-  { name: 'BBlunt', colorA: '#F59E0B', colorB: '#EF4444'},
-  { name: 'BGauss',  colorA: '#3B82F6', colorB: '#8B5CF6'}
+  { name: 'OLA',       colorA: '#00D4FF', colorB: '#2563eb' },
+  { name: 'Lenskart',  colorA: '#10b981', colorB: '#059669' },
+  { name: 'GharSoaps', colorA: '#f472b6', colorB: '#be185d' },
+  { name: 'BGauss',    colorA: '#3B82F6', colorB: '#8B5CF6' },
+  { name: 'BBlunt',    colorA: '#F59E0B', colorB: '#EF4444' },
+  { name: 'VIDA',      colorA: '#a855f7', colorB: '#7c3aed' },
+  { name: 'Zubronics', colorA: '#00D4FF', colorB: '#0ea5e9' },
+  { name: 'Suno AI',   colorA: '#f97316', colorB: '#dc2626' },
+  { name: 'Perfora',   colorA: '#ec4899', colorB: '#a855f7' },
+  { name: 'Bingo!',    colorA: '#fbbf24', colorB: '#f97316' },
+  { name: 'Logitech',  colorA: '#4ade80', colorB: '#16a34a' },
 ];
 
 export default function CollabSection() {

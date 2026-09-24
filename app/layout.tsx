@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://djhpo.vercel.app"),
   applicationName: "DJ HPO",
   title: "DJ HPO – Viral Mashup Artist & Wedding DJ Jaipur | Book Now",
-  description: "DJ HPO is Jaipur's viral mashup artist & professional event DJ. 60M+ views, 100+ events performed in Rajasthan. Book for weddings, parties, corporate events. Download mashup packs. @mashbyhpo",
+  description: "DJ HPO is Jaipur's viral mashup artist & professional event DJ. 150M+ views, 100+ events performed in Rajasthan. Book for weddings, parties, corporate events. Download mashup packs. @mashbyhpo",
   keywords: [
     "DJ HPO",
     "mashup artist",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "DJ HPO – Viral Mashup Artist & Event DJ | Jaipur, Rajasthan",
-    description: "Jaipur's viral mashup artist & professional DJ. 60M+ views. Book for weddings, corporate events & parties across Rajasthan.",
+    description: "Jaipur's viral mashup artist & professional DJ. 150M+ views. Book for weddings, corporate events & parties across Rajasthan.",
     siteName: "DJ HPO",
     type: "website",
     url: "https://djhpo.vercel.app",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DJ HPO – Viral Mashup Artist",
-    description: "Creating high-energy viral mashups. 60M+ views.",
+    description: "Creating high-energy viral mashups. 150M+ views.",
     images: ["/artist.jpg"],
   },
   robots: {
@@ -81,7 +81,7 @@ export default function RootLayout({
         "name": "DJ HPO",
         "url": "https://djhpo.vercel.app",
         "image": "https://djhpo.vercel.app/artist.jpg",
-        "description": "DJ HPO is a viral mashup artist based in Jaipur, Rajasthan, creating high-energy Bollywood & EDM mashups with 60M+ views. Available for weddings, corporate events and private parties.",
+        "description": "DJ HPO is a viral mashup artist based in Jaipur, Rajasthan, creating high-energy Bollywood & EDM mashups with 150M+ views. Available for weddings, corporate events and private parties.",
         "foundingLocation": {
           "@type": "Place",
           "name": "Jaipur, Rajasthan, India"
