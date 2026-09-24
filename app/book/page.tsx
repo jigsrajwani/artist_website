@@ -422,7 +422,7 @@ export default function BookPage() {
               animation: 'fadeInUp 0.7s 0.2s ease forwards',
             }}
           >
-            DJ HPO is India&apos;s top-rated wedding DJ — based in Jaipur, performing across India. Specializing in <strong style={{ color: 'white' }}>Sangeet Night, Baraat on Wheels, Mehndi &amp; Reception</strong>. 5+ years of experience, 100+ weddings, and 150M+ viral views. High-energy Bollywood, Punjabi &amp; EDM mashup sets — fully customized for your big day.
+            DJ HPO is India&apos;s top-rated wedding DJ — based in Jaipur, performing across India. Specializing in <strong style={{ color: 'white' }}>Sangeet Night, Baraat on Wheels, Mehndi &amp; Reception</strong>. 5+ years of experience, 100+ weddings, and 300M+ viral views. High-energy Bollywood, Punjabi &amp; EDM mashup sets — fully customized for your big day.
           </p>
           <p
             style={{
@@ -469,7 +469,7 @@ export default function BookPage() {
               { icon: '💍', text: '100+ Weddings Performed' },
               { icon: '⭐', text: '5-Star Rated Wedding DJ' },
               { icon: '📍', text: 'Jaipur & Pan-India' },
-              { icon: '🎬', text: '150M+ Social Media Views' },
+              { icon: '🎬', text: '300M+ Social Media Views' },
             ].map((b) => (
               <div key={b.text} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.9rem', borderRadius: '9999px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', fontSize: '0.8rem', color: 'rgba(209,213,219,1)' }}>
                 <span>{b.icon}</span>
@@ -566,7 +566,7 @@ export default function BookPage() {
                 </span>
               </h2>
               <p style={{ color: 'rgba(156,163,175,1)', lineHeight: 1.8, marginBottom: '2rem', fontSize: '0.95rem' }}>
-                DJ HPO isn&apos;t just a DJ — he&apos;s a viral content creator with 150M+ views who understands what music moves people. Every set is crafted specifically for your event, your guests, and your vibe.
+                DJ HPO isn&apos;t just a DJ — he&apos;s a viral content creator with 300M+ views who understands what music moves people. Every set is crafted specifically for your event, your guests, and your vibe.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
@@ -615,7 +615,7 @@ export default function BookPage() {
                 <div style={{ fontSize: '0.6rem', color: 'rgba(107,114,128,1)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Events</div>
               </div>
               <div style={{ position: 'absolute', bottom: '4rem', left: '-1rem', padding: '0.75rem 1rem', background: 'rgba(3,7,18,0.9)', backdropFilter: 'blur(12px)', borderRadius: '0.875rem', border: '1px solid rgba(0,212,255,0.3)', textAlign: 'center' }}>
-                <div style={{ fontWeight: 900, fontSize: '1.4rem', background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>150M+</div>
+                <div style={{ fontWeight: 900, fontSize: '1.4rem', background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>300M+</div>
                 <div style={{ fontSize: '0.6rem', color: 'rgba(107,114,128,1)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Views</div>
               </div>
             </div>

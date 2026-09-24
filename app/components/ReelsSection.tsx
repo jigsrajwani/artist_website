@@ -117,7 +117,7 @@ export default function ReelsSection() {
             <span style={{ background: 'linear-gradient(135deg, #00D4FF, #8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Reels</span>
           </h2>
           <p style={{ color: 'rgba(156,163,175,1)', maxWidth: '36rem', margin: '0 auto 1.25rem' }}>
-            150M+ views across Instagram. Real music, real energy, real impact.
+            300M+ views across Instagram. Real music, real energy, real impact.
           </p>
           <a
             id="instagram-follow-btn"
